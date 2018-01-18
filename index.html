@@ -102,19 +102,19 @@
 							<div class="c-name-1">По классам</div>
 							<div class="catalog-1">
 								<div class="class-8">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Классы/8-class.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-a">8 класс</a></div>
 								</div>
 								<div class="class-9">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Классы/9-class.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-a">9 класс</a></div>
 								</div>
 								<div class="class-10">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Классы/10-class.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-a-1">10 класс</a></div>
 								</div>
 								<div class="class-11-1">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Классы/11-class.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-a-2">11 класс</a></div>
 								</div>
 							</div>
@@ -123,19 +123,19 @@
 							<div class="c-name-1">По курсам</div>
 							<div class="catalog-1">
 								<div class="class-8">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Курсы/one.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-b-1">I курс</a></div>
 								</div>
 								<div class="class-9">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Курсы/two.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-b">II курс</a></div>
 								</div>
 								<div class="class-10">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Курсы/three.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-b">III курс</a></div>
 								</div>
 								<div class="class-11-2">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Курсы/four.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-b">IV курс</a></div>
 								</div>
 							</div>
@@ -144,19 +144,19 @@
 							<div class="c-name-1">Дополнительно</div>
 							<div class="catalog-1" id="catalog-back">
 								<div class="class-8">
-									<a href="#"><img src="img/unnamed.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Дополнительно/photoshop.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-c">Программы</a></div>
 								</div>
 								<div class="class-9">
-									<a href="#"><img src="img/forum-icon.jpg" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Дополнительно/user.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-c-1">Форум</a></div>
 								</div>
 								<div class="class-10">
-									<a href="#"><img src="img/icons8-контакты.svg" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Дополнительно/mail.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-c-2">Написать <span class="fixed"></span></a></div>
 								</div>
 								<div class="class-11-3">
-									<a href="#"><img src="img/video-icon.png" alt="photo1"></a>
+									<a href="#"><img src="img/Готовые/Дополнительно/youtube.svg" alt="photo1"></a>
 									<div class="description"><a href="#" class="description-c">Видеоуроки</a></div>
 								</div>
 							</div>
@@ -224,7 +224,85 @@
 				</article>
 			</section>
 		</div>
-		
+		<!--Footer-->
+		<footer class="footer">
+				<div class="inner">
+					<section class="inner-footer">
+						<h2>Написать учителю</h2>
+						<form class="form-call">
+							<!--<div class="success-form"><span>Ваше сообщение отправлено</span></div>-->
+			
+							<input type="hidden" name="project_name" value="Information">
+							<input type="hidden" name="admin_email" value="websiteinformation@mail.ua">
+							<input type="hidden" name="form_subject" value="Сообщение с сайта Information">
+							<!--Изменение название страницы с которой было отправлено сообщение-->
+							<input type="hidden" name="Страница" value="">
+							
+							<div class="field half first">
+								<label for="name">Имя и фамилия</label>
+								<input type="text" name="name" required>
+							</div>
+							<div class="field half">
+								<label for="name">Email</label>
+								<input type="text" name="email" required>
+							</div>
+							<div class="field half select first">
+								<label for="kyrs">На каком вы курсе</label>
+								<select name="kyrs">
+									<option>I курс</option>
+									<option>II курс</option>
+									<option>III курс</option>
+									<option>IV курс</option>
+								</select>
+							</div>
+							<div class="field half select">
+								<label for="kyrs">Представьтесь</label>
+								<select name="kyrs">
+									<option>Учащийся</option>
+									<option>Родитель</option>
+									<option>Коллега</option>
+									<option>Модератор</option>
+									<option>Другое лицо</option>
+								</select>
+							</div>
+							<div class="field">
+								<label for="message">Сообщение</label>
+								<textarea name="message" class="message" rows="5"></textarea>
+							</div>
+						</form>
+					</section>
+					<section class="contacts">
+						<h2>Контактные данные</h2>
+						<section>
+							<h3>Адрес</h3>
+							<p>Улица Челюскинцев, 159, кабинет 101<br>Донецк, Донецкая область, 83000</p>
+						</section>
+						<section>
+							<h3>Телефон</h3>
+							<p>#телефон#</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p>#Email#</p>
+						</section>
+						<section>
+							<h3>Социальное</h3>
+							<ul class="soc-icons alt">
+								<li><a href="#" class=""></a></li>
+								<li><a href="#" class=""></a></li>
+							</ul>
+						</section>
+					</section>
+				</div>
+				<section class="map-contacts">
+					<iframe src="https://yandex.ua/map-widget/v1/-/CBeAuXHUWB" width="600" height="400" frameborder="0"></iframe>
+				</section>
+			</section>
+			
+			
+			
+		</footer>
+					
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
