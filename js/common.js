@@ -18,4 +18,21 @@ jQuery(document).ready(function(){
      	return false;
   });
 
+  //E-mail Ajax форма
+  $("form.form-call").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "/mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      $(th).find('.success-form').addClass('active').css('display', 'flex').hide().fadeIn();
+      setTimeout(function() {
+        $(th).find('.success-form').removeClass('active').fadeOut();
+        th.trigger("reset");
+      }, 3000);
+    });
+    return false;
+  });
+
  });
